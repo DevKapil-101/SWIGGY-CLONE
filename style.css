@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.nav-container {
+  /* border: 2px solid gray; */
+  background-color: #f7f7f7;
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-evenly;
+  box-shadow: 0px .1px 5px gray;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.left-nav {
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: darkgrey;
+  /* gap: 10px; */
+}
+.left-nav > img {
+  width: 50px;
+  transition: 0.5s;
+}
+.logo:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.address-container {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.address-container > a {
+  font-weight: bolder;
+  color: darkgrey;
+  /* text-decoration: none; */
+}
+.address-container > a:hover {
+  color: #f37f28;
+}
+.right-nav {
+  /* border: 2px solid pink; */
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.right-nav > a {
+  /* border: 1px solid greenyellow; */
+  display: flex;
+  text-decoration: none;
+  color: darkgrey;
+  gap: 5px;
+}
+main {
+  background-color: #f7f7f7;
+}
+.main-container {
+  /* border: 1px solid #f37f28; */
+  margin: 0px 150px;
+  padding-top: 40px;
+}
+.second-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px solid darkgrey;
+  padding-bottom: 10px;
+}
+.link-lists {
+  display: flex;
+  gap: 40px;
+}
+.link-lists > a {
+  text-decoration: none;
+  color: darkgrey;
+}
+.link-lists > a:hover {
+  border-bottom: 1px solid darkgrey;
+}
+.cards-container {
+  /* border: 1px solid orange; */
+  padding: 15px 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  gap: 50px;
+}
+.card {
+  /* border: 2px solid pink; */
+  width: 300px;
+  padding: 20px;
+  padding-bottom: 0;
+  margin-top: 20px;
+  transition: .5s;
+}
+.card:hover {
+  /* outline: 0.2px solid darkgrey; */
+  box-shadow: 2px 2px 5px darkgrey;
+  transform: scale(1.1);
+}
+.card img {
+  width: 100%;
+}
+.card > h3 {
+  margin: 10px 0;
+}
+.description {
+  color: darkgrey;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.rating-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  border-bottom: 0.1px solid gray;
+  font-size: 14px;
+}
+.rating-container span {
+  color: white;
+}
+.rating-container > li {
+  color: darkgrey;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  background-color: #db7c38;
+  color: #f7f7f7;
+  padding: 0 4px;
+  border-radius: 3px;
+  gap: 4px;
+}
+.rating > .material-icons {
+  font-size: 16px !important ;
+  color: #f7f7f7;
+}
+.offer-container {
+  color: #8a584b;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  gap: 5px;
+}
+.card button {
+  visibility: hidden;
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  margin: 10px auto;
+  background-color: inherit;
+  color: cadetblue;
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 1px solid gray;
+}
+.card:hover button {
+  visibility: visible;
+}
+.badge-container {
+  position: relative;
+  transition: 2s;
+}
+.badge-container:hover {
+  transform: scale(1.1);
+}
+.badge {
+  position: absolute;
+  background-color: rgb(57, 60, 65);
+  color: white;
+  padding: 4px 10px;
+  font-size: 14px;
+  left: -10px;
+}
+.badge-container::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  background-color: rgb(57, 60, 65);
+  position: absolute;
+  left: -10px;
+  height: 25px;
+  top: 9px;
+  transform: skewY(45deg);
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-item h4 {
+  color: gray;
+  font-size: 20px;
+}
+.footer-item a {
+  text-decoration: none;
+  color: darkgrey;
+}
+.appStore {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.appStore img {
+  transition: 1s;
+}
+.appStore img:hover {
+  transform: scale(1.1);
+}
